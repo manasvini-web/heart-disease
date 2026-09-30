@@ -1,0 +1,5 @@
+outs:
+- md5: cf5f0b1a14ed2643cd0332803c1b2be0
+  size: 4073793
+  hash: md5
+  path: HeartDisease_RF_v1.joblib

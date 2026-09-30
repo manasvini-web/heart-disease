@@ -1,0 +1,13 @@
+{
+    "model_name": "HeartDisease_4373_API_Model",
+    "model_version": "1.0",
+    "algorithm": "Random Forest",
+    "n_estimators": 100,
+    "max_depth": 10,
+    "number_of_features": 13,
+    "target": "num",
+    "accuracy": 0.597826,
+    "precision_weighted": 0.549242,
+    "recall_weighted": 0.597826,
+    "f1_weighted": 0.570143
+}

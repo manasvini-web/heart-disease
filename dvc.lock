@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: data/heart_disease_uci_cleaned.csv
+      hash: md5
+      md5: 452c24627842b363171d2b9fd8b70f50
+      size: 59314
+    - path: train.py
+      hash: md5
+      md5: e049d078d45fa0608fc4ee4f9e7440bc
+      size: 2636
+    params:
+      params.yaml:
+        model_v1:
+          n_estimators: 100
+          max_depth:
+          min_samples_split: 2
+          random_state: 42
+        model_v2:
+          n_estimators: 200
+          max_depth: 10
+          min_samples_split: 4
+          random_state: 42
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: 8771357e42ab9b892c9473e85f6b59b8
+      size: 379
